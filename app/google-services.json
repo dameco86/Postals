@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "575398728027",
+    "project_id": "postals-dameco86-2021",
+    "storage_bucket": "postals-dameco86-2021.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:575398728027:android:c6192f9867c42e85b4ca7e",
+        "android_client_info": {
+          "package_name": "com.dameco.postals"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "575398728027-qe8dkchpdtp4e0ng1clv2tjt43e45v8s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKZ4Dfvios8-E1Py6aQYs-OHzKyCRr-zM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "575398728027-qe8dkchpdtp4e0ng1clv2tjt43e45v8s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
