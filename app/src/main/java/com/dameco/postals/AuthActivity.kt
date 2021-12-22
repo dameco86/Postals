@@ -35,6 +35,8 @@ class AuthActivity : AppCompatActivity() {
                         showAlert()
                     }
                 }
+            }else{
+                showMessage()
             }
         }
 
@@ -52,10 +54,28 @@ class AuthActivity : AppCompatActivity() {
 
     }
 
-    private fun showAlert(){
+    private fun showAlert() {
         val builder = AlertDialog.Builder(this)
         builder.setTitle("Error")
-        builder.setMessage("Se ha producido un error auntenticando el usuario")
+        builder.setMessage("No se ha podido acceder a la cuenta, asegurese de que los datos son correctos")
+        builder.setPositiveButton("Aceptar", null)
+        val dialog: AlertDialog = builder.create()
+        dialog.show()
+    }
+
+    private fun showMessage(){
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("Error")
+        if (emailEditText.text.isEmpty() && passwordEditText.text.isEmpty()) {
+            builder.setMessage("No se han introducido datos")
+        }else{
+            if (emailEditText.text.isEmpty()){
+                builder.setMessage("El usuario es obligatorio")
+            }else if (passwordEditText.text.isEmpty()){
+                builder.setMessage("La contraseña es obligatoria")
+            }
+        }
+        //builder.setMessage("No se ha introducido un Email y/o Contraseña")
         builder.setPositiveButton("Aceptar", null)
         val dialog: AlertDialog = builder.create()
         dialog.show()
