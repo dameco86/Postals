@@ -53,7 +53,7 @@ class AuthActivity : AppCompatActivity() {
         }
 
     }
-
+    //message when problem to access the account
     private fun showAlert() {
         val builder = AlertDialog.Builder(this)
         builder.setTitle("Error")
@@ -62,7 +62,7 @@ class AuthActivity : AppCompatActivity() {
         val dialog: AlertDialog = builder.create()
         dialog.show()
     }
-
+    //message when no enter User or Pwd
     private fun showMessage(){
         val builder = AlertDialog.Builder(this)
         builder.setTitle("Error")
